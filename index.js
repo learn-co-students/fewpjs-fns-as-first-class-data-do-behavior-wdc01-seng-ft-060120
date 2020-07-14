@@ -9,5 +9,13 @@ function handleClick(e) {
 
 /* End Given Code, don't edit above here...*/
 
-/* Write your implementation of greet() */
+function greet(timeString) {
+    let timeNow = parseInt(timeString, 10) //in our case the radix is 10 because the string begins with any other value
+    if (timeNow < 12) return "Good Morning"
+    if (timeNow > 17) return "Good Evening"
+    return "Good Afternoon"
+}
 /* Write your implementation of displayMessage() */
+function displayMessage(string) {
+    document.getElementById('greeting').innerText = string
+}
